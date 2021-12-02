@@ -15,8 +15,8 @@ O objetivo é criar uma página única para a visualização de um produto, que 
 
 Alguns detalhes da interface são:
 
-- Existirão três telas: Fotos, Lightbox e Sobre o projeto
-- Terá um modo escuro
 - Os ícones utilizados são da [Eva Icons](https://akveo.github.io/eva-icons/#/)
+- Existirão três telas: Fotos, Lightbox e Sobre
+- O modo escuro será o padrão, mas o projeto também contará comum modo claro
 
 ![Wireframe](./resources/images/wireframe-desktop.png)
