@@ -13,4 +13,10 @@ O objetivo é criar uma página única para a visualização de um produto, que 
 
 ### Interface de Usuário
 
+Alguns detalhes da interface são:
+
+- Existirão três telas: Fotos, Lightbox e Sobre o projeto
+- Terá um modo escuro
+- Os ícones utilizados são da [Eva Icons](https://akveo.github.io/eva-icons/#/)
+
 ![Wireframe](./resources/images/wireframe-desktop.png)
