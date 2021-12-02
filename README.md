@@ -21,4 +21,7 @@ Alguns detalhes da interface são:
 
 \*Na versão mobile, a Lightbox não está presente.
 
+| Wireframe |
+| --------- |
+
 ![Wireframe](./resources/images/wireframe.png)
