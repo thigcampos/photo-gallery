@@ -19,6 +19,6 @@ Alguns detalhes da interface são:
 - Existirão três telas: Fotos, Lightbox\* e Sobre
 - O modo escuro será o padrão, mas o projeto também contará comum modo claro
 
-* Na versão mobile, a Lightbox não está presente.
+\*Na versão mobile, a Lightbox não está presente.
 
 ![Wireframe](./resources/images/wireframe.png)
