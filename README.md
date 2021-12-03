@@ -26,3 +26,8 @@ Alguns detalhes da interface são:
 | --------- |
 
 ![Wireframe](./resources/images/wireframe.png)
+
+| Protótipo |
+| --------- |
+
+![Protótipo](./resources/images/prototype.png)
