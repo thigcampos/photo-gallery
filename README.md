@@ -2,7 +2,7 @@
 
 Recentemente li um artigo do Clóvis Neto sobre a [criação de componentes apenas com CSS](https://clovisdasilvaneto.github.io/criando-componentes-apenas-com-css) e fiquei extremamente interessado no assunto, principalmente na aparente melhora de performance da página. Dito isso, decidi criar uma galeria de fotos com a maior quantidade de componentes em puro CSS possível.
 
-O projeto foi desenvolvido utilizando a framework React.js e as tecnologias CSS, SASS e JavaScript. Já para o desenvolvimento da Interface de Usuário, utilizei a ferramenta Figma, além dos plugins Iconify e Unsplash.
+O projeto foi desenvolvido utilizando a framework **React.js** e as tecnologias **CSS, SASS e JavaScript**. Já para o desenvolvimento da Interface de Usuário, utilizei a ferramenta **Figma**, além dos plugins **Iconify e Unsplash**.
 
 ### Detalhes do projeto
 
@@ -19,8 +19,8 @@ Alguns detalhes da interface são:
 
 - A API utilizada é a da [Pexels.](https://www.pexels.com/api/documentation/#photos)
 - Os ícones utilizados são da [Box Icons.](https://boxicons.com/)
-- O projeto contará com modo claro e modo escuro.
 - Existirão três telas: Fotos, Lightbox\* e Sobre.
+- O projeto contará com modo claro e modo escuro.
 
 \*Na versão mobile, a Lightbox não está presente.
 
