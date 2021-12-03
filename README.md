@@ -6,7 +6,7 @@ Recentemente li um artigo do Clóvis Neto sobre a [criação de componentes apen
 
 O objetivo é criar uma página única para a visualização de um produto, que deve conter as seguintes características:
 
-- Ser responsível
+- Ser responsivo
 - Conter uma lightbox
 - Não utilizar bibliotecas CSS
 - Manter uma estética coerente
