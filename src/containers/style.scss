@@ -1,0 +1,25 @@
+// global
+
+@mixin theme($bg-color: #f1fafc, $txt-color: #1c1c1e) {
+  background: $bg-color;
+  color: $txt-color;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue",
+    sans-serif;
+}
+
+#light-mode {
+  @include theme;
+}
+
+#dark-mode {
+  @include theme($bg-color: #1c1c1e, $txt-color: #f1fafc);
+}
+
+// navigation bar
+
+// photo-gallery
+
+// footer

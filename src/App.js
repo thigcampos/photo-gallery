@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div>
+    <body>
       <header>
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -9,7 +9,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </body>
   );
 }
 
