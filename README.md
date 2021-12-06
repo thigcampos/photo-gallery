@@ -42,7 +42,9 @@ Comecei o projeto organizando as pastas, as telas foram para a pasta **container
 
 #### Criando o theme switcher
 
-Comecei o desenvolvimento do **theme switcher** no arquivo SCSS. Criei um estilo chamado _theme_ utilizando **@mixin** e defini as variáveis _$main-color, $bg-color e $secondary-color_. Então criei dois IDs, o _light-theme_ e o _dark-theme_, utilizei **@include** para reaproveitar os códigos de _theme_, apenas alterando as variáveis quando foi necessário. Segue parte do código para exemplificação:
+Comecei o desenvolvimento do **theme switcher** no arquivo SCSS. Criei um estilo chamado _theme_ utilizando **@mixin** e defini as variáveis _$main-color, $bg-color e $secondary-color_.
+
+Então criei dois IDs, o _light-theme_ e o _dark-theme_, utilizei **@include** para reaproveitar os códigos de _theme_, apenas alterando as variáveis quando foi necessário. Segue parte do código para exemplificação:
 
     @mixin theme($main-color: #1C1C1E, $bg-color: #F1FAFC, $secondary-color: darkBlue)
         #body {
@@ -65,3 +67,5 @@ Comecei o desenvolvimento do **theme switcher** no arquivo SCSS. Criei um estilo
 
 Note que todos os códigos de estilo aplicados globalmente estão dentro de _theme_, [clique aqui](./src/style/global.scss) para acessar o codigo completo.
 Caso ainda tenha alguma dúvida sobre a utilização de **@mixin** e **@include**, acesse a documentação do [SASS](https://sass-lang.com/documentation/at-rules/mixin)
+
+Em cada página do projeto, utilizando o _useState_, adicionei variáveis em todos os locais necessários e então criei um _useEffect_ que lidasse com todas as alterações. A ação _onClick_ de ambos os botões disparam a função **setDarkTheme()** que altera o valor de _darkMode_ para _true_ ou _false_ e então o _useEffect_ executa todas as mudancas previstas.
