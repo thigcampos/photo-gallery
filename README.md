@@ -42,7 +42,7 @@ Comecei o projeto organizando as pastas, as telas foram para a pasta **container
 
 #### Criando o theme switcher
 
-Para a troca de tema, criei um estilo no arquivo global.scss chamado _theme_ e defini as variáveis $main-color, $bg-color e $secondary-color utilizando o **@mixin** do SASS. Então criei dois IDs, o _light-theme_ e o _dark-theme_ e utilizei o **@include** para usar como base o _theme_, apenas alterando as variáveis quando necessário. Segue parte do código para exemplificação:
+Comecei o desenvolvimento do **theme switcher** no arquivo SCSS. Criei um estilo chamado _theme_ utilizando **@mixin** e defini as variáveis _$main-color, $bg-color e $secondary-color_. Então criei dois IDs, o _light-theme_ e o _dark-theme_, utilizei **@include** para reaproveitar os códigos de _theme_, apenas alterando as variáveis quando foi necessário. Segue parte do código para exemplificação:
 
     @mixin theme($main-color: #1C1C1E, $bg-color: #F1FAFC, $secondary-color: darkBlue)
         #body {
@@ -51,7 +51,7 @@ Para a troca de tema, criei um estilo no arquivo global.scss chamado _theme_ e d
             font-family: -apple-system, BlinkMacSystemFont, Roboto, Ubuntu, "Open Sans",
               "Helvetica Neue", sans-serif;
 
-        ...outros códigos de estilo
+        // outros códigos de estilo
         }
     }
 
@@ -63,4 +63,5 @@ Para a troca de tema, criei um estilo no arquivo global.scss chamado _theme_ e d
         @include theme($main-color: #f1fafc, $bg-color: #1c1c1e, $secondary-color: lightBlue)
     }
 
-Note que todos os códigos de estilo aplicados globalmente estão dentro de _theme_ facilitando assim a adição, ou remoção, de estilos futuramente.
+Note que todos os códigos de estilo aplicados globalmente estão dentro de _theme_, [clique aqui](./src/style/global.scss) para acessar o codigo completo.
+Caso ainda tenha alguma dúvida sobre a utilização de **@mixin** e **@include**, acesse a documentação do [SASS](https://sass-lang.com/documentation/at-rules/mixin)
