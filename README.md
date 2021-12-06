@@ -33,3 +33,7 @@ Alguns detalhes da interface são:
 | --------- |
 
 ![Protótipo](./resources/images/prototype.png)
+
+### Desenvolvimento
+
+Comecei o projeto organizando as pastas, as telas foram para a pasta **container**, já os componentes básicos para a pasta **components** e todos os arquivos SVG foram colocados na **assets**. Para facilitar a troca do tema, decidi centralizar todos os estilos globais em uma pasta chamada **style** que contém o arquivo global.scss.
