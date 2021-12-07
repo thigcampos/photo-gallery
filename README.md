@@ -68,4 +68,4 @@ Então criei dois IDs, o _light-theme_ e o _dark-theme_, utilizei **@include** p
 Note que todos os códigos de estilo aplicados globalmente estão dentro de _theme_, [clique aqui](./src/style/global.scss) para acessar o codigo completo.
 Caso ainda tenha alguma dúvida sobre a utilização de **@mixin** e **@include**, acesse a documentação do [SASS](https://sass-lang.com/documentation/at-rules/mixin)
 
-Em cada página do projeto, utilizando o _useState_, adicionei variáveis em todos os locais necessários para a mudança de tema e então criei um _useEffect_ que lidasse com todas as alterações. A ação _onClick_ de ambos os botões disparam a função **setDarkTheme()** que altera o valor de _darkMode_ para _true_ ou _false_ e então o _useEffect_ executa todas as mudancas previstas.
+Em cada página do projeto, utilizando o _useState_, adicionei variáveis em todos os locais necessários para a mudança de tema e então criei um _useEffect_ que lidasse com todas as alterações. De forma resumida, a ação _onClick_ dos botões disparam a função **setDarkTheme()** que altera o valor de _darkMode_ para _true_ ou _false_ e então o _useEffect_ executa todas as mudancas previstas.
