@@ -51,16 +51,12 @@ const Photos = () => {
             <img alt="ola" />
             <img alt="ola" />
             <img alt="ola" />
-
             <img alt="ola" />
             <img alt="ola" />
-
             <img alt="ola" />
             <img alt="ola" />
-
             <img alt="ola" />
             <img alt="ola" />
-
             <img alt="ola" />
             <img alt="ola" />
           </div>
