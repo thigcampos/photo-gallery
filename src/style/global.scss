@@ -1,7 +1,7 @@
 @mixin theme(
   $bg-color: #f1fafc,
   $main-color: #1c1c1e,
-  $secondary-color: darkBlue
+  $secondary-color: rgb(212, 106, 68)
 ) {
   // Global
   #body {
@@ -13,6 +13,16 @@
     background-color: $bg-color;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, Ubuntu, "Open Sans",
       "Helvetica Neue", sans-serif;
+  }
+
+  ::selection {
+    color: $main-color;
+    background-color: $secondary-color;
+  }
+
+  ::-moz-selection {
+    color: $main-color;
+    background-color: $secondary-color;
   }
   // Navigation Bar & Footer
   nav {
@@ -36,6 +46,7 @@
           text-decoration: none;
           &:hover {
             color: $secondary-color;
+            text-decoration: underline;
           }
         }
       }
@@ -54,6 +65,12 @@
       span {
         padding-left: 10px;
         display: inline;
+      }
+
+      @media (max-width: 750px) {
+        span {
+          display: none;
+        }
       }
     }
   }
@@ -86,10 +103,30 @@
     }
 
     img {
-      width: 364px;
-      height: 364px;
+      width: 264px;
+      height: 264px;
       margin-bottom: 24px;
       background-color: coral;
+    }
+
+    @media (max-width: 669px) {
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        font-size: 36px;
+        margin: 8% 0;
+        text-align: center;
+      }
+
+      div {
+        justify-content: center;
+      }
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
     }
   }
 }
@@ -102,6 +139,6 @@
   @include theme(
     $bg-color: #1c1c1e,
     $main-color: #f1fafc,
-    $secondary-color: lightBlue
+    $secondary-color: coral
   );
 }
