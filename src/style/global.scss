@@ -77,18 +77,22 @@
       margin: 4% 0;
     }
 
-    #image-row {
+    div {
       width: 100%;
-      display: inline-flex;
+      display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       overflow: hidden;
+    }
+
+    img {
+      width: 364px;
+      height: 364px;
+      min-width: 264px;
+      min-height: 264px;
       margin-bottom: 24px;
 
-      img {
-        width: 264px;
-        height: 264px;
-        background-color: $main-color;
-      }
+      background-color: $main-color;
     }
   }
 }

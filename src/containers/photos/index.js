@@ -46,31 +46,21 @@ const Photos = () => {
         </header>
         <main>
           <h2>Galeria Principal</h2>
-          <div id={"image-row"}>
+          <div>
             <img alt="ola" />
             <img alt="ola" />
             <img alt="ola" />
             <img alt="ola" />
-            <img alt="ola" />
-          </div>
-          <div id={"image-row"}>
+
             <img alt="ola" />
             <img alt="ola" />
+
             <img alt="ola" />
             <img alt="ola" />
-            <img alt="ola" />
-          </div>
-          <div id={"image-row"}>
+
             <img alt="ola" />
             <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
-          </div>
-          <div id={"image-row"}>
-            <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
+
             <img alt="ola" />
             <img alt="ola" />
           </div>
