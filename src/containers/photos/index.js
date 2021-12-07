@@ -70,7 +70,7 @@ const Photos = () => {
         </main>
         <footer>
           <nav>
-            <Logo />
+            <Logo theme={logoColor} />
             <ul>
               <li>
                 <a href="/" tabindex="4">
