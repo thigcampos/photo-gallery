@@ -36,16 +36,16 @@ const Photos = () => {
             <Logo theme={logoColor} />
             <ul>
               <li>
-                <a href="/" tabindex="1">
+                <a href="/" tabIndex="0">
                   photos
                 </a>
               </li>
               <li>
-                <a href="about" tabindex="2">
+                <a href="about" tabIndex="0">
                   sobre
                 </a>
               </li>
-              <button onClick={handleTheme} tabindex="3">
+              <button onClick={handleTheme} tabIndex="0">
                 <Icon icon={iconName} height="20" /> <span>{btnName}</span>
               </button>
             </ul>
@@ -54,18 +54,26 @@ const Photos = () => {
         <main>
           <h2>Galeria Principal</h2>
           <div>
-            <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
-            <img alt="ola" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
+            <img alt="ola" tabIndex="0" />
           </div>
         </main>
         <footer>
@@ -73,16 +81,16 @@ const Photos = () => {
             <Logo theme={logoColor} />
             <ul>
               <li>
-                <a href="/" tabindex="4">
+                <a href="/" tabIndex="0">
                   photos
                 </a>
               </li>
               <li>
-                <a href="about" tabindex="5">
+                <a href="about" tabIndex="0">
                   sobre
                 </a>
               </li>
-              <button onClick={handleTheme} tabindex="6">
+              <button onClick={handleTheme} tabIndex="0">
                 <Icon icon={iconName} height="20" />
               </button>
             </ul>
