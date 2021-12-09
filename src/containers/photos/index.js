@@ -2,15 +2,12 @@ import React, { useState, useEffect } from "react";
 import "../../style/global.scss";
 import { Icon } from "@iconify/react";
 import { Logo } from "../../assets";
-import { getImages } from "./utils";
+import { getImages, darkTheme, lightTheme } from "./utils";
 
 const Photos = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const [globalTheme, setGlobalTheme] = useState("light-theme");
-  const [btnName, setBtnName] = useState("Modo Escuro");
-  const [iconName, setIconName] = useState("Modo Escuro");
-  const [logoColor, setLogoColor] = useState("#1C1C1E");
   const [imgArray, setImgArray] = useState([]);
+  const [theme, setTheme] = useState(lightTheme);
 
   function handleTheme() {
     return setDarkMode(!darkMode);
@@ -18,15 +15,9 @@ const Photos = () => {
 
   useEffect(() => {
     if (darkMode) {
-      setGlobalTheme("dark-theme");
-      setBtnName("Modo Claro");
-      setIconName("bx:bxs-sun");
-      setLogoColor("#f1fafc");
+      setTheme(darkTheme);
     } else {
-      setGlobalTheme("light-theme");
-      setBtnName("Modo Escuro");
-      setIconName("bx:bxs-moon");
-      setLogoColor("#1c1c1e");
+      setTheme(lightTheme);
     }
   }, [darkMode]);
 
@@ -35,11 +26,11 @@ const Photos = () => {
   }, []);
 
   return (
-    <div id={globalTheme}>
+    <div id={theme.state}>
       <div id={"body"}>
         <header>
           <nav>
-            <Logo theme={logoColor} />
+            <Logo theme={theme.logoColor} />
             <ul>
               <li>
                 <a href="/" tabIndex="0">
@@ -52,7 +43,8 @@ const Photos = () => {
                 </a>
               </li>
               <button onClick={handleTheme} tabIndex="0">
-                <Icon icon={iconName} height="20" /> <span>{btnName}</span>
+                <Icon icon={theme.iconName} height="20" />{" "}
+                <span>{theme.btnName}</span>
               </button>
             </ul>
           </nav>
@@ -73,7 +65,7 @@ const Photos = () => {
         </main>
         <footer>
           <nav>
-            <Logo theme={logoColor} />
+            <Logo theme={theme.logoColor} />
             <ul>
               <li>
                 <a href="/" tabIndex="0">
@@ -86,7 +78,7 @@ const Photos = () => {
                 </a>
               </li>
               <button onClick={handleTheme} tabIndex="0">
-                <Icon icon={iconName} height="20" />
+                <Icon icon={theme.iconName} height="20" />
               </button>
             </ul>
           </nav>

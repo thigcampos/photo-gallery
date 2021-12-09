@@ -12,6 +12,23 @@ export function getImages(pageIndex, perPage, setState) {
       return resp.json();
     })
     .then((data) => {
-      return setState(data.photos);
+      let prevPage = data.prev_page;
+      let nextPage = data.next_page;
+      setState(data.photos);
+      return [prevPage, nextPage, setState];
     });
 }
+
+export const darkTheme = {
+  state: "dark-theme",
+  btnName: "Modo Claro",
+  iconName: "bx:bxs-sun",
+  logoColor: "#f1fafc",
+};
+
+export const lightTheme = {
+  state: "light-theme",
+  btnName: "Modo Escuro",
+  iconName: "bx:bxs-moon",
+  logoColor: "#1c1c1e",
+};
