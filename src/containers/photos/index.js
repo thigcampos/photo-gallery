@@ -14,11 +14,7 @@ const Photos = () => {
   }
 
   useEffect(() => {
-    if (darkMode) {
-      setTheme(darkTheme);
-    } else {
-      setTheme(lightTheme);
-    }
+    darkMode ? setTheme(darkTheme) : setTheme(lightTheme);
   }, [darkMode]);
 
   useEffect(() => {
