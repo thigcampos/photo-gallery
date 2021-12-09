@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../style/global.scss";
 import { Icon } from "@iconify/react";
 import { Logo } from "../../assets";
+import { getImages } from "./utils";
 
 const Photos = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -9,6 +10,7 @@ const Photos = () => {
   const [btnName, setBtnName] = useState("Modo Escuro");
   const [iconName, setIconName] = useState("Modo Escuro");
   const [logoColor, setLogoColor] = useState("#1C1C1E");
+  const [imgArray, setImgArray] = useState([]);
 
   function handleTheme() {
     return setDarkMode(!darkMode);
@@ -27,6 +29,10 @@ const Photos = () => {
       setLogoColor("#1c1c1e");
     }
   }, [darkMode]);
+
+  useEffect(() => {
+    getImages(1, 20, setImgArray);
+  }, []);
 
   return (
     <div id={globalTheme}>
@@ -54,26 +60,15 @@ const Photos = () => {
         <main>
           <h2>Galeria Principal</h2>
           <div>
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
-            <img alt="ola" tabIndex="0" />
+            {imgArray.map((image) => (
+              <img
+                alt="lot of Pexels"
+                src={image.src.large}
+                loading="lazy"
+                tabIndex="0"
+                key={image.id}
+              />
+            ))}
           </div>
         </main>
         <footer>
