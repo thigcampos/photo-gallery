@@ -1,7 +1,8 @@
 @mixin theme(
   $bg-color: #f1fafc,
   $main-color: #1c1c1e,
-  $secondary-color: rgb(212, 106, 68)
+  $secondary-color: rgb(212, 106, 68),
+  $tertiary-color: #a8a8a8
 ) {
   // Global
   #body {
@@ -51,6 +52,7 @@
         }
       }
     }
+
     button {
       padding: 13px 20px;
       color: $bg-color !important;
@@ -74,6 +76,43 @@
       }
     }
   }
+
+  #pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    ul {
+      list-style: none;
+      display: inline-flex;
+      align-items: center;
+
+      li {
+        display: inline;
+        margin-right: 50px;
+
+        button {
+          color: $main-color;
+          text-decoration: none;
+          background-color: transparent;
+          border-style: none;
+          font-size: 16px;
+          &:hover {
+            color: $secondary-color;
+            text-decoration: underline;
+          }
+        }
+        .off {
+          color: $tertiary-color;
+          &:hover {
+            color: $tertiary-color;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
   header {
     padding-top: 2%;
   }
@@ -100,13 +139,13 @@
       flex-wrap: wrap;
       justify-content: space-between;
       overflow: hidden;
-    }
 
-    img {
-      width: 264px;
-      height: 264px;
-      margin-bottom: 24px;
-      object-fit: cover;
+      img {
+        width: 264px;
+        height: 264px;
+        margin-bottom: 24px;
+        object-fit: cover;
+      }
     }
 
     @media (max-width: 669px) {
@@ -121,11 +160,11 @@
 
       div {
         justify-content: center;
-      }
 
-      img {
-        width: 300px;
-        height: 300px;
+        img {
+          width: 300px;
+          height: 300px;
+        }
       }
     }
   }
@@ -139,6 +178,7 @@
   @include theme(
     $bg-color: #1c1c1e,
     $main-color: #f1fafc,
-    $secondary-color: coral
+    $secondary-color: coral,
+    $tertiary-color: #555555
   );
 }
