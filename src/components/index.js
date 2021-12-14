@@ -1,3 +1,3 @@
-import ThemeBtn from "./button";
+import Pagination from "./pagination";
 
-export { ThemeBtn };
+export { Pagination };
