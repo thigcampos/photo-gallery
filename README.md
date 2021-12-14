@@ -38,7 +38,7 @@ Alguns detalhes da interface são:
 
 #### Organizando os Arquivos
 
-Comecei o projeto organizando todas as pastas. As telas foram para a pasta **container**, já os componentes básicos da aplicação, como o slider, foram para a pasta **components** e todos os arquivos SVG foram colocados na **assets**. Para facilitar a troca do tema, decidi centralizar todos os estilos globais em uma pasta chamada **style** que contém o arquivo _global.scss_.
+Comecei o projeto organizando todas as pastas. As telas foram para a pasta **container**, já os componentes básicos da aplicação, como o slider e o header, foram para a pasta **components** e todos os arquivos SVG foram colocados na **assets**. Para facilitar a troca do tema, decidi centralizar todos os estilos globais em uma pasta chamada **style** que contém o arquivo _global.scss_.
 
 #### Criando o theme switcher
 
